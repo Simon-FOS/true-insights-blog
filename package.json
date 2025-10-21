@@ -1,0 +1,32 @@
+{
+  "name": "true-insights-blog",
+  "version": "1.0.0",
+  "description": "A modular, production-ready blog app built with **mexus/nexusjs**, **Express**, **Sequelize**, **express-handlebars**, **Multer**, and **Cloudinary** — designed for clarity, performance, and scalability.",
+  "homepage": "https://github.com/Simon-FOS/true-insights-blog#readme",
+  "keywords": [
+    "blog",
+    "express",
+    "sequelize",
+    "handlebars",
+    "multer",
+    "cloudinary",
+    "mexus",
+    "nexusjs",
+    "modular",
+    "scalable"
+  ],
+  "bugs": {
+    "url": "https://github.com/Simon-FOS/true-insights-blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-FOS/true-insights-blog.git"
+  },
+  "license": "MIT",
+  "author": "Simon-FOS",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
