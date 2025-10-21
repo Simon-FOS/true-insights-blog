@@ -20,34 +20,15 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   User.init({
-    first_name: {
+    username: {
       type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: 'N/A', // fallback for existing records
-    },
-    last_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: 'N/A',
-    },
-    bio: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    avatar_url: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: '/assets/img/profile.png', // fallback profile pic
-    },
-    phone_number: {
-      type: DataTypes.STRING,
-      allowNull: true,
       unique: true,
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING,
-      unique:true,
-      allowNull:false
+      unique: true,
+      allowNull: false
     },
     password: DataTypes.STRING,
   }, {
