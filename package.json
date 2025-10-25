@@ -34,7 +34,8 @@
   "dependencies": {
     "@nathius262/nexusjs": "^0.0.20",
     "i": "^0.3.7",
-    "npm": "^11.6.2"
+    "npm": "^11.6.2",
+    "sequelize-slugify": "^1.6.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10",
