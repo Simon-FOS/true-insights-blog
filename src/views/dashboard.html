@@ -1,0 +1,204 @@
+<!-- Stats Cards -->
+<div class="row">
+    <div class="col-md-3">
+        <div class="dashboard-card">
+            <div class="card-icon reflections">
+                <i class="fas fa-pray"></i>
+            </div>
+            <div class="card-value">24</div>
+            <div class="card-label">Reflections</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="dashboard-card">
+            <div class="card-icon stories">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <div class="card-value">18</div>
+            <div class="card-label">Stories</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="dashboard-card">
+            <div class="card-icon comments">
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="card-value">142</div>
+            <div class="card-label">Comments</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="dashboard-card">
+            <div class="card-icon users">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="card-value">1,254</div>
+            <div class="card-label">Subscribers</div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Reflections Table -->
+    <div class="col-md-8">
+        <div class="table-container">
+            <div class="table-title">
+                <h3>Recent Reflections</h3>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i> New Reflection
+                </button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Finding God in the Stillness</td>
+                            <td>Meditation</td>
+                            <td>Oct 12, 2023</td>
+                            <td><span class="status-published">Published</span></td>
+                            <td class="action-btns">
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm" style="background-color: var(--highlight); color: white;"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Power of Forgiveness</td>
+                            <td>Relationships</td>
+                            <td>Oct 10, 2023</td>
+                            <td><span class="status-published">Published</span></td>
+                            <td class="action-btns">
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm" style="background-color: var(--highlight); color: white;"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hope in Difficult Times</td>
+                            <td>Encouragement</td>
+                            <td>Oct 5, 2023</td>
+                            <td><span class="status-published">Published</span></td>
+                            <td class="action-btns">
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm" style="background-color: var(--highlight); color: white;"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gratitude as a Way of Life</td>
+                            <td>Mindfulness</td>
+                            <td>Oct 3, 2023</td>
+                            <td><span class="status-draft">Draft</span></td>
+                            <td class="action-btns">
+                                <button class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm btn-primary"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-sm" style="background-color: var(--highlight); color: white;"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Traffic Chart -->
+        <div class="chart-container">
+            <div class="table-title">
+                <h3>Traffic Overview</h3>
+            </div>
+            <div
+                style="height: 300px; background-color: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <p class="text-muted">Traffic chart would be displayed here</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="col-md-4">
+        <!-- Recent Activity -->
+        <div class="table-container">
+            <div class="table-title">
+                <h3>Recent Activity</h3>
+            </div>
+            <ul class="activity-feed">
+                <li class="activity-item">
+                    <div class="activity-icon reflection">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h5>New Reflection Published</h5>
+                        <p>"Finding God in the Stillness" was published</p>
+                        <div class="activity-time">2 hours ago</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon comment">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h5>New Comment Received</h5>
+                        <p>John D. commented on "The Power of Forgiveness"</p>
+                        <div class="activity-time">5 hours ago</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon story">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h5>Story Updated</h5>
+                        <p>"The Ripple Effect" was updated</p>
+                        <div class="activity-time">Yesterday</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon reflection">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h5>New Subscriber</h5>
+                        <p>Sarah M. subscribed to your newsletter</p>
+                        <div class="activity-time">2 days ago</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="table-container">
+            <div class="table-title">
+                <h3>Quick Stats</h3>
+            </div>
+            <div class="mb-3">
+                <strong>Most Popular Reflection:</strong>
+                <p class="mb-1">"Finding God in the Stillness"</p>
+                <small class="text-muted">245 views</small>
+            </div>
+            <div class="mb-3">
+                <strong>Most Popular Story:</strong>
+                <p class="mb-1">"The Ripple Effect of a Simple Act"</p>
+                <small class="text-muted">189 views</small>
+            </div>
+            <div class="mb-3">
+                <strong>Subscriber Growth:</strong>
+                <p class="mb-1">+42 this month</p>
+            </div>
+            <div>
+                <strong>Engagement Rate:</strong>
+                <p class="mb-1">12.4%</p>
+            </div>
+        </div>
+    </div>
+</div>
