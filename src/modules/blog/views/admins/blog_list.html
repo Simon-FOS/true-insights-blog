@@ -1,0 +1,217 @@
+<!-- Page Header -->
+<div class="page-header">
+  <h2 class="page-title">Blog Posts</h2>
+  <a href="/admin/blog/create" class="btn btn-primary">
+    <i class="fas fa-plus me-2"></i> New Post
+  </a>
+</div>
+
+<!-- Stats Cards -->
+<div class="row">
+  <div class="col-md-4">
+    <div class="stats-card">
+      <div class="stats-icon published">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="stats-value">24</div>
+      <div class="stats-label">Published Posts</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="stats-card">
+      <div class="stats-icon draft">
+        <i class="fas fa-edit"></i>
+      </div>
+      <div class="stats-value">8</div>
+      <div class="stats-label">Drafts</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="stats-card">
+      <div class="stats-icon scheduled">
+        <i class="fas fa-clock"></i>
+      </div>
+      <div class="stats-value">3</div>
+      <div class="stats-label">Scheduled</div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog List Container -->
+<div class="blog-list-container">
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" class="form-control" placeholder="Search posts...">
+    </div>
+    <div class="filter-options">
+      <select class="form-select">
+        <option>All Categories</option>
+        <option>Reflections</option>
+        <option>Stories</option>
+        <option>Prayers</option>
+      </select>
+      <select class="form-select">
+        <option>All Status</option>
+        <option>Published</option>
+        <option>Draft</option>
+        <option>Scheduled</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Blog Table -->
+  <div class="table-responsive">
+    <table class="table blog-table">
+      <thead>
+        <tr>
+          <th width="40%">Post</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Blog Post 1 -->
+        <tr class="blog-item">
+          <td>
+            <div class="blog-title">Finding God in the Stillness</div>
+            <p class="blog-excerpt">In our noisy world, we often miss the gentle whisper of God's voice. This
+              reflection explores how to cultivate sacred silence...</p>
+            <div class="blog-meta">
+              <span class="blog-category">Meditation</span>
+              <span class="blog-type">Reflection</span>
+            </div>
+          </td>
+          <td>Reflections</td>
+          <td><span class="status-published">Published</span></td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+
+        <!-- Blog Post 2 -->
+        <tr class="blog-item">
+          <td>
+            <div class="blog-title">The Ripple Effect of a Simple Act</div>
+            <p class="blog-excerpt">How one man's small gesture of kindness created waves of compassion throughout
+              an entire community...</p>
+            <div class="blog-meta">
+              <span class="blog-category">Kindness</span>
+              <span class="blog-type">Story</span>
+            </div>
+          </td>
+          <td>Stories</td>
+          <td><span class="status-published">Published</span></td>
+          <td>Oct 10, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+
+        <!-- Blog Post 3 -->
+        <tr class="blog-item">
+          <td>
+            <div class="blog-title">The Power of Forgiveness</div>
+            <p class="blog-excerpt">Holding onto resentment is like drinking poison and expecting the other person
+              to suffer. Discover the freedom that comes with forgiveness...</p>
+            <div class="blog-meta">
+              <span class="blog-category">Relationships</span>
+              <span class="blog-type">Reflection</span>
+            </div>
+          </td>
+          <td>Reflections</td>
+          <td><span class="status-published">Published</span></td>
+          <td>Oct 8, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+
+        <!-- Blog Post 4 -->
+        <tr class="blog-item">
+          <td>
+            <div class="blog-title">Unexpected Blessings: A Modern Miracle</div>
+            <p class="blog-excerpt">When all hope seemed lost, a family experienced God's provision in the most
+              unexpected way...</p>
+            <div class="blog-meta">
+              <span class="blog-category">Miracles</span>
+              <span class="blog-type">Story</span>
+            </div>
+          </td>
+          <td>Stories</td>
+          <td><span class="status-draft">Draft</span></td>
+          <td>Oct 5, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+
+        <!-- Blog Post 5 -->
+        <tr class="blog-item">
+          <td>
+            <div class="blog-title">Hope in Difficult Times</div>
+            <p class="blog-excerpt">When life's challenges threaten to overwhelm us, hope serves as our spiritual
+              anchor, keeping us steady in God's promises...</p>
+            <div class="blog-meta">
+              <span class="blog-category">Encouragement</span>
+              <span class="blog-type">Reflection</span>
+            </div>
+          </td>
+          <td>Reflections</td>
+          <td><span class="status-scheduled">Scheduled</span></td>
+          <td>Oct 15, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-primary btn-sm" title="View"><i class="fas fa-eye"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-container">
+    <div class="pagination-info">Showing 1 to 5 of 35 posts</div>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</main>
+
+<!-- Bootstrap JS -->
+<script>
+
+  // Update active menu item
+  document.querySelectorAll('.sidebar-menu a').forEach(item => {
+    item.addEventListener('click', function () {
+      document.querySelectorAll('.sidebar-menu a').forEach(i => {
+        i.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>

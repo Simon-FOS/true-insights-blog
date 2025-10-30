@@ -1,0 +1,226 @@
+<main class="container py-4">
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/admin"><i class="fas fa-home me-1"></i> Dashboard</a></li>
+      <li class="breadcrumb-item"><a href="/admin/blog">Blog Posts</a></li>
+      <li class="breadcrumb-item active">Create New Post</li>
+    </ol>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="page-title">Create New Blog Post</h1>
+    <div class="status-indicator">
+      <span class="status-badge status-draft"><i class="fas fa-edit me-1"></i> Draft</span>
+    </div>
+  </div>
+
+  <!-- Blog Creation Form -->
+  <div class="form-container">
+    <form id="blogForm">
+      <!-- Basic Information Section -->
+      <div class="form-section">
+        <h3 class="section-title">Basic Information</h3>
+
+        <div class="mb-4">
+          <label for="postTitle" class="form-label">Post Title</label>
+          <input type="text" class="form-control" id="postTitle" placeholder="Enter a compelling title for your post">
+          <div class="form-text">Make your title descriptive and engaging to attract readers.</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="postExcerpt" class="form-label">Excerpt</label>
+          <textarea class="form-control" id="postExcerpt" rows="3"
+            placeholder="Brief summary of your post (appears in post listings)"></textarea>
+          <div class="form-text">Write a short, engaging summary of your post (approx. 150 characters).</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="postCategory" class="form-label">Category</label>
+            <select class="form-select" id="postCategory">
+              <option value="">Select a category</option>
+              <option value="reflection">Reflection</option>
+              <option value="story">Story</option>
+              <option value="prayer">Prayer</option>
+              <option value="meditation">Meditation</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <label for="postType" class="form-label">Post Type</label>
+            <select class="form-select" id="postType">
+              <option value="">Select post type</option>
+              <option value="weekly-reflection">Weekly Reflection</option>
+              <option value="inspiring-story">Inspiring Story</option>
+              <option value="prayer-guide">Prayer Guide</option>
+              <option value="devotional">Devotional</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Image Section -->
+      <div class="form-section">
+        <h3 class="section-title">Featured Image</h3>
+
+        <div class="image-upload-container" id="imageUpload">
+          <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h5>Upload Featured Image</h5>
+          <p class="text-muted">Drag & drop an image or click to browse</p>
+          <input type="file" id="featuredImage" accept="image/*" style="display: none;">
+          <button type="button" class="btn btn-outline-secondary mt-2"
+            onclick="document.getElementById('featuredImage').click()">
+            Select Image
+          </button>
+          <img id="imagePreview" class="image-preview" alt="Featured image preview">
+        </div>
+        <div class="form-text">Recommended size: 1200x630 pixels. This image will be used as the thumbnail for your
+          post.</div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="form-section">
+        <h3 class="section-title">Content</h3>
+
+        <div class="mb-4">
+          <label class="form-label">Post Content</label>
+
+          <!-- Simple Rich Text Editor -->
+          <div class="editor-toolbar">
+            <button type="button" title="Bold"><i class="fas fa-bold"></i></button>
+            <button type="button" title="Italic"><i class="fas fa-italic"></i></button>
+            <button type="button" title="Underline"><i class="fas fa-underline"></i></button>
+            <button type="button" title="Bullet List"><i class="fas fa-list-ul"></i></button>
+            <button type="button" title="Numbered List"><i class="fas fa-list-ol"></i></button>
+            <button type="button" title="Insert Link"><i class="fas fa-link"></i></button>
+            <button type="button" title="Insert Image"><i class="fas fa-image"></i></button>
+            <button type="button" title="Quote"><i class="fas fa-quote-right"></i></button>
+          </div>
+
+          <div class="editor-content" contenteditable="true" id="postContent">
+            <p>Start writing your inspiring content here...</p>
+          </div>
+
+          <div class="form-text mt-2">Write your post content. You can format text, add images, and create engaging
+            layouts.</div>
+        </div>
+      </div>
+
+      <!-- SEO & Settings Section -->
+      <div class="form-section">
+        <h3 class="section-title">SEO & Settings</h3>
+
+        <div class="mb-4">
+          <label for="postSlug" class="form-label">URL Slug</label>
+          <input type="text" class="form-control" id="postSlug" placeholder="auto-generated-from-title">
+          <div class="form-text">The URL-friendly version of your title. Usually auto-generated but you can customize
+            it.</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="metaDescription" class="form-label">Meta Description</label>
+          <textarea class="form-control" id="metaDescription" rows="2"
+            placeholder="Brief description for search engines"></textarea>
+          <div class="form-text">Write a compelling description for search engines (approx. 155 characters).</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="postStatus" class="form-label">Status</label>
+            <select class="form-select" id="postStatus">
+              <option value="draft">Draft</option>
+              <option value="published">Published</option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-4" id="scheduleDateContainer" style="display: none;">
+            <label for="scheduleDate" class="form-label">Schedule Date & Time</label>
+            <input type="datetime-local" class="form-control" id="scheduleDate">
+          </div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="featuredPost">
+          <label class="form-check-label" for="featuredPost">
+            Feature this post on the homepage
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="allowComments" checked>
+          <label class="form-check-label" for="allowComments">
+            Allow comments on this post
+          </label>
+        </div>
+      </div>
+
+      <!-- Form Actions -->
+      <div class="form-actions">
+        <div class="form-text">Last saved: <span id="lastSaved">Just now</span></div>
+        <div class="action-buttons">
+          <button type="button" class="btn btn-outline-secondary">Save Draft</button>
+          <button type="submit" class="btn btn-primary">Publish Post</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<script>
+  // Handle image preview
+  document.getElementById('featuredImage').addEventListener('change', function (e) {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const preview = document.getElementById('imagePreview');
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+
+  // Handle schedule date visibility based on status
+  document.getElementById('postStatus').addEventListener('change', function () {
+    const scheduleContainer = document.getElementById('scheduleDateContainer');
+    if (this.value === 'scheduled') {
+      scheduleContainer.style.display = 'block';
+    } else {
+      scheduleContainer.style.display = 'none';
+    }
+  });
+
+  // Auto-generate slug from title
+  document.getElementById('postTitle').addEventListener('input', function () {
+    const slugField = document.getElementById('postSlug');
+    if (!slugField.value || slugField.value === 'auto-generated-from-title') {
+      const slug = this.value
+        .toLowerCase()
+        .replace(/[^\w ]+/g, '')
+        .replace(/ +/g, '-');
+      slugField.value = slug;
+    }
+  });
+
+  // Form submission
+  document.getElementById('blogForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // In a real application, you would submit the form data to your backend
+    alert('Post published successfully!');
+  });
+
+  // Update last saved time
+  function updateLastSaved() {
+    const now = new Date();
+    document.getElementById('lastSaved').textContent = now.toLocaleTimeString();
+  }
+
+  // Simulate auto-save every 30 seconds
+  setInterval(updateLastSaved, 30000);
+</script>
