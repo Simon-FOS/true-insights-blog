@@ -1,0 +1,105 @@
+<!-- Page Header -->
+<div class="page-header">
+  <h2 class="page-title">Category</h2>
+  <a href="/admin/category/create" class="btn btn-primary">
+    <i class="fas fa-plus me-2"></i> New Post
+  </a>
+</div>
+
+
+<!-- Category List Container -->
+<div class="category-list-container">
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" class="form-control" placeholder="Search categories...">
+    </div>
+
+  </div>
+
+  <!-- Category Table -->
+  <div class="table-responsive">
+    <table class="table category-table">
+      <thead>
+        <tr>
+          <th width="40%">Category Name</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Category Post 1 -->
+        <tr class="category-item">
+          <td>
+            <div class="category-title">Homily</div>
+          </td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr class="category-item">
+          <td>
+            <div class="category-title">Homily</div>
+          </td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr class="category-item">
+          <td>
+            <div class="category-title">Homily</div>
+          </td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr class="category-item">
+          <td>
+            <div class="category-title">Homily</div>
+          </td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr class="category-item">
+          <td>
+            <div class="category-title">Homily</div>
+          </td>
+          <td>Oct 12, 2023</td>
+          <td class="action-btns">
+            <button class="btn btn-secondary btn-sm" title="Edit"><i class="fas fa-edit"></i></button>
+            <button class="btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  {{> pagination}}
+</div>
+</main>
+
+<!-- Bootstrap JS -->
+<script>
+
+  // Update active menu item
+  document.querySelectorAll('.sidebar-menu a').forEach(item => {
+    item.addEventListener('click', function () {
+      document.querySelectorAll('.sidebar-menu a').forEach(i => {
+        i.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
