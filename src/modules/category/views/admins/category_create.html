@@ -1,9 +1,58 @@
+<main class="container py-4">
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/admin"><i class="fas fa-home me-1"></i> Dashboard</a></li>
+      <li class="breadcrumb-item"><a href="/admin/category">Categories</a></li>
+      <li class="breadcrumb-item active">Create New Categories</li>
+    </ol>
+  </nav>
 
-  <h1>Create Category</h1>
-  <form action="/admin/category" method="POST">
-    <!-- Add your form fields here -->
-    <div class="form-group">
-      <button type="submit">Create</button>
-    </div>
-  </form>
-  
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="page-title">Create New Categories</h1>
+
+  </div>
+
+  <!-- Blog Creation Form -->
+  <div class="form-container">
+    <form id="blogForm">
+      <!-- Basic Information Section -->
+      <div class="form-section">
+        <h3 class="section-title">Basic Information</h3>
+
+        <div class="mb-4">
+          <label for="postTitle" class="form-label">Category Title</label>
+          <input type="text" class="form-control" id="postTitle" placeholder="Enter a compelling title for your post">
+          <div class="form-text">Make your title descriptive and engaging to attract readers.</div>
+        </div>
+
+
+
+
+      </div>
+
+
+      <!-- Form Actions -->
+      <div class="form-actions">
+        <div class="action-buttons">
+          <button type="submit" class="btn btn-primary">Create Categories</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<script>
+
+
+
+  // Form submission
+  document.getElementById('blogForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // In a real application, you would submit the form data to your backend
+    alert('Post published successfully!');
+  });
+
+</script>
